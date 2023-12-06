@@ -1,0 +1,242 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+.top-banner {
+  background-color: #acceb8;
+  padding: 20px;
+  text-align: center;
+}
+
+.top-banner h1 {
+  color: #ffffff;
+  font-size: 32px;
+}
+
+p {
+  text-align: center;
+  margin: 5px;
+  color: #160000;
+}
+
+a {
+  text-align: center;
+  margin: 5px;
+}
+
+.login-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  width: 300px;
+}
+
+.login-container input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.login-container button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #1d9fb9;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login-container button:hover {
+  background-color: #298cb3;
+}
+
+#forgot-password {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  color: #888;
+  text-decoration: none;
+}
+.google-login-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+
+.google-login-container button {
+  display: flex;
+  align-items: center; /* Center the logo and text vertically */
+  justify-content: center; /* Center the logo and text horizontally */
+  width: 100%;
+  padding: 10px;
+  background-color: #ec774c;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.google-login-container button img {
+  width: 24px; /* Adjust the width of the logo */
+  height: 24px; /* Adjust the height of the logo */
+  margin-right: 8px; /* Adjust the spacing between the logo and text */
+}
+ 
+.google-login-container button:hover {
+  background-color: #ff4d00;
+}
+
+#register-link {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  color: #888;
+  text-decoration: none;
+}
+.registration {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.registration input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.registration button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #5a61a6;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.registration button:hover {
+  background-color: #19438c;
+}
+
+.error-message {
+  text-align: center;
+  color: #ff0000;
+  margin-top: 10px;
+}
+.p2 {
+  color: #888;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Additional styles for the footer */
+footer {
+  background-color: #1db954;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+}
+/* Consistent Button Styling */
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Add a class for secondary buttons if needed */
+.secondary-btn {
+  background-color: #4285f4;
+  color: #fff;
+}
+
+.secondary-btn:hover {
+  background-color: #357ae8;
+}
+
+/* Consistent Input Field Styling */
+input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+/* Responsive Layout */
+@media screen and (max-width: 600px) {
+  /* Adjust styles for smaller screens */
+  .login-container,
+  .google-login-container {
+    width: 115%;
+    padding: 10px; /* Add padding to the login containers */
+  }
+}
+/* Additional styles for the login section */
+.login-parallax-container {
+  position: relative;
+  height: 100vh; /* Adjust the height based on your design */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.header-content {
+  text-align: center;
+}
+
+.login-section {
+  background-color: rgba(255, 255, 255, 0.8); /* Adjust the background color and transparency */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.login-parallax-container:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('your-background-image.jpg'); /* Replace with your actual image */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  z-index: -1;
+  /* opacity: 0.5; Adjust the opacity based on your design preference */
+}

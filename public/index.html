@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <title>Apnea Home</title>
+    <link rel="stylesheet" href="styles.css">
+ 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/moment"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-moment"></script>
+    <script src="https://cdn.jsdelivr.net/npm/wordcloud@1.2.2/src/wordcloud2.min.js"></script>
+
+  
+    <script defer type="module" src="spotify-api.js"></script>
+
+  </head>
+  <body>
+
+    <header>
+      <!-- Top Bar for User Info -->
+      <div class="top-bar">
+        <div class="user-info">
+            <img class="user-image" >
+            <div>
+                <span class="user-name">Logged Off</span>
+                <!-- <a class="profile-link" href="profile_url">View Spotify Profile</a> -->
+            </div>
+        </div>
+        <button id="logoffButton">Log Off</button>  
+
+    </div>
+  </header>
+
+  <nav>
+      <!-- Navigation bar/menu goes here -->
+      <button id="RefreshButton">Refresh Spotify</button>
+
+  </nav>
+
+  <main>
+      <div id="left-section">
+
+          <!-- Graphs and statistics go here -->
+      </div>
+      <div id="right-section">
+        <h2 class="section-title">Listening History</h2>
+
+          <!-- Card history go here -->
+      </div>
+  </main>
+
+  <footer>
+      <!-- Footer content goes here -->
+      Apnea Music all rights reserved
+  </footer>
+
+
+ 
+   
+  </body>
+</html>

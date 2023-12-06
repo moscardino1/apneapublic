@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="login-style.css"> <!-- Add your login styles here -->
+    <script defer type="module" src="firebase-init.js"></script>
+    <script defer type="module" src="login.js"></script>
+
+    <title>Apnea Welcome</title>
+    <meta name="description" content="ApneaMusic">
+</head>
+<body>
+   <!-- Header Section with Parallax Background -->
+   <header class="parallax">
+    <!-- Login Section Container with Parallax Effect -->
+    <div class="login-parallax-container">
+        <div class="header-content">
+            <h1>ApneaMusic</h1>
+            <p>Dive into the Echoes of Your Music</p>
+        </div>
+        <!-- Additional Content (Login Section) -->
+        <section class="grid-item login-section">
+            <!-- <h1>Login</h1> -->
+
+            <div class="login-container">
+                <p>Login</p>
+
+                <input id="username-input" type="text" placeholder="Username">
+                <input id="password-input" type="password" placeholder="Password">
+                <button id="login-btn" class="login-btn">Login</button>
+                <a id="forgot-password" href="#">Forgot password?</a>
+            </div>
+
+            <div class="google-login-container">
+                <p>Sign-In</p>
+
+                <button id="google-btn" class="login-btn">
+                    <img src="google-logo.png" alt="Google Logo">
+                    Continue with Google
+                  </button>
+                                  <a id="register-link" href="#">Register with your email</a>
+                <div id="register-modal" style="display: none;">
+                    <div class="registration">
+                        <input id="register-username-input" type="text" placeholder="Enter your Email">
+                        <input id="register-password-input" type="password" placeholder="Enter your Password">
+                        <button id="register-btn" class="register-btn">Register</button>
+                    </div>
+                </div>
+                <p id="error-message" class="error-message"></p>
+            </div>
+        </section>
+    </div>
+    </header>
+
+    <!-- SVG Illustrations -->
+    <div class="svg-container">
+        <!-- Add colorful and stylish SVG illustrations here -->
+    </div>
+
+ 
+
+<p> <p2>Apnea Music all rights reserved</p2></p>
+<!-- Cookie Consent by FreePrivacyPolicy.com https://www.FreePrivacyPolicy.com -->
+<script type="text/javascript" src="//www.freeprivacypolicy.com/public/cookie-consent/4.1.0/cookie-consent.js" charset="UTF-8"></script>
+<script type="text/javascript" charset="UTF-8">
+document.addEventListener('DOMContentLoaded', function () {
+cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palette":"dark","language":"en","page_load_consent_levels":["strictly-necessary"],"notice_banner_reject_button_hide":false,"preferences_center_close_button_hide":false,"page_refresh_confirmation_buttons":false,"website_name":"apnea"});
+});
+</script>
+
+
+<noscript>Cookie Consent by <a href="https://www.freeprivacypolicy.com/">Free Privacy Policy Generator</a></noscript>
+<!-- End Cookie Consent by FreePrivacyPolicy.com https://www.FreePrivacyPolicy.com -->
+
+
+
+
+
+<!-- Below is the link that users can use to open Preferences Center to change their preferences. Do not modify the ID parameter. Place it where appropriate, style it as needed. -->
+<div>
+<p href="#" id="open_preferences_center">Update cookies preferences</p>
+</div>
+ 
+</body>
+</html>

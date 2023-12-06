@@ -1,0 +1,160 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+nav {
+  /* background-color: #333; */
+  color: #fff;
+  /* padding: 0.5em; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  /* padding: 0.5em 1em; */
+}
+
+nav a:hover {
+  background-color: #555;
+}
+
+
+
+.top-bar {
+  color: #000000;
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 10px 10px; */
+}
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  margin-right: 10px;
+}
+
+.user-name {
+  font-size: 1em;
+  font-weight: bold;
+  color: #000000;
+
+}
+button#RefreshButton, button#logoffButton, button#toggleWordCloudButton {
+  background-color: #616161;
+  color: #ffffff;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+ 
+button#RefreshButton:disabled,    button#logoffButton:disabled {
+  background-color: #ccc; /* Gray when disabled */
+  cursor: not-allowed;
+}
+
+
+button#RefreshButton:hover,   button#logoffButton:hover {
+  background-color: #e5e5e5; /* Light gray on hover */
+}
+
+
+main {
+  display: flex;
+  justify-content: space-between;
+  /* padding: 20px; */
+}
+
+#left-section,
+#right-section {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* padding: 20px; */
+  width: 49%;
+}
+
+/* Styles for charts and statistics */
+
+.card {
+  display: flex;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  width: 100%; /* Adjust the width based on your preference */
+}
+
+.card img {
+  width: 20%; /* Adjust the width of the image based on your preference */
+  height: auto; /* Adjust the height of the image based on your preference */
+  /* border-radius: 8px 0 0 8px; Rounded corners on the left for the image */
+  object-fit: cover;
+}
+
+h2 {
+  font-size: 1.2em; /* Adjust the font size for the title */
+  text-align: center;
+
+}
+.card .info h2 {
+  font-size: 1.2em; /* Adjust the font size for the title */
+}
+.card .info h3 {
+  font-size: 1.2em; /* Adjust the font size for the title */
+  margin: 0%;
+
+}
+
+.card .info p {
+  font-size: 0.9em; /* Adjust the font size for other text */
+margin: 0%;
+}
+
+/* Add more styling based on your preference */
+
+/* Add more styling based on your preference */
+
+/* Add additional styles for responsiveness */
+
+@media (max-width: 768px) {
+  main {
+      flex-direction: column;
+  }
+
+  #left-section,
+  #right-section {
+      width: 100%;
+  }
+}
+ 
+
+ 
+footer {
+  background-color: #ffffff;
+  color: #1d1b1b;
+  text-align: center;
+  /* padding: 1em 0; */
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
